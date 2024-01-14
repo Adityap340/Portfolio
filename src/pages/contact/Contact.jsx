@@ -33,7 +33,7 @@ const Contact = () => {
   }
   // style={{ backgroundImage: `url(${Background})` }}
   return (
-    <div className='gradient__bg flex flex-col md:flex-row items-center justify-center h-screen' >
+    <div className='gradient__bg flex flex-col md:flex-row items-center justify-center max-h-screen'>
       <div className='md:w-1/2 py-20 order-2 md:order-1'>
         <p className='text-slate-400'>GET IN TOUCH</p>
         <h1 className='text-6xl font-bold mb-4 text-slate-200'>Contact<br/>Me</h1>
