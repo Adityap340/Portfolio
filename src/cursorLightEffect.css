@@ -1,0 +1,35 @@
+/* cursorLightEffect.css */
+
+.cursor-light {
+    position: absolute;
+    background: radial-gradient(
+      circle,
+      #ffffff 50%,  /* Light gray color in the center */
+      #52768d 60%,  /* Slightly darker gray color */
+      #253258 80%,  /* Dark gray color */
+      transparent 100% /* Fully transparent at the outer edge */
+    );
+    background-size: 400% 400%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    width: 120px;  /* Increase the size to 120px */
+    height: 120px; /* Increase the size to 120px */
+    border-radius: 50%;
+    animation: pulse 1.5s infinite;
+    z-index: 0;   /* Set a lower z-index to ensure it stays behind other content */
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0.7;
+    }
+    50% {
+      opacity: 0.3;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1.5);
+      opacity: 0;
+    }
+  }
+  

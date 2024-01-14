@@ -1,0 +1,23 @@
+/* Home.css */
+.hii{
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px;
+}
+.sub-text{
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+}
+@keyframes slideIn {
+    from {
+      transform: translateX(50%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .animated-image {
+    animation: slideIn 1s ease-out;
+  }
